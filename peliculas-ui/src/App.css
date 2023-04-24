@@ -139,3 +139,9 @@ p.author a {
     font-weight: 700;
     color: #fff;
 }
+
+.back-button{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}

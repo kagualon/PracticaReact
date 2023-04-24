@@ -1,7 +1,8 @@
 import { useFetch } from "../hooks/useFetch";
-import { useParams } from "react-router-dom";
+import { useParams, Link} from "react-router-dom";
 import { useEffect } from "react";
 import DefaultImage from "/NoImage.png"
+import { Button } from "@mui/material";
 
 
 const SingleMovie = () => {
@@ -27,8 +28,7 @@ const SingleMovie = () => {
                 <p><strong>Released: </strong>{ Released }</p>
                 <p><strong>Runtime: </strong>{ Runtime }</p>
                 <p><strong>Year: </strong>{ Year }</p>
-                <button>Volver</button>
-                <Button variant="contained">Contained</Button>
+                <Button variant="contained"><Link to='/' className="back-button">Volver</Link></Button>
             </div>
         </div>
         : ''
