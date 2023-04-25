@@ -145,3 +145,21 @@ p.author a {
     color: white;
     font-weight: 400;
 }
+
+.MuiCard-root{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.MuiCardMedia-root{
+    height: 300px;
+    object-fit: cover;
+}
+
+.MuiCardContent-root{
+    flex: 1;
+}

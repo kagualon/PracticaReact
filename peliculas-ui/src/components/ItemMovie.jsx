@@ -5,7 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-
+import { Grid } from "@mui/material";
 
 
 
@@ -16,14 +16,15 @@ const ItemMovie = ({ id, title, type, year, poster }) => {
     return (
         <Link to={`/movies/${id}`} style={{ color: 'inherit', textDecoration: 'inherit' }}>
 
-            <Card sx={{ maxWidth: 200 }}>
+        <Grid item xs={12} sm={8} md={8} lg={182}>
+            <Card sx={{maxWidth: 200}} style={{width: "100%"}} className="card">
                 <CardMedia
                     component="img"
                     height="300"
                     image={image}
                     alt={title}
                 />
-                <CardContent>
+                <CardContent sx={{padding:"10px"}} className="card-body">
                     <Typography>
                         {title}
                     </Typography>
@@ -32,6 +33,7 @@ const ItemMovie = ({ id, title, type, year, poster }) => {
                     </Typography>
                 </CardContent>
             </Card>
+            </Grid>
         </Link>
     );
 }
